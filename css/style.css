@@ -1,0 +1,312 @@
+/* Main color scheme */
+:root {
+  --background-color: #191919;
+  --text-color: #b3b3b3;
+}
+
+/* Typography */
+body {
+  font-family: Inconsolata, Menlo, Chicago, Geneva;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--background-color) !important;
+
+}
+
+nav ul a,
+nav .brand-logo {
+  color: var(--text-color);
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: var(--primary-color);
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, .9);
+  /* background-color: var(--background-color); */
+}
+
+.parallax-container .section {
+  width: 100%;
+  color: var(--text-color);
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #intro .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #intro .section {
+    top: 0;
+  }
+}
+
+@media only screen and (min-width : 993px) {
+  .parallax img {
+    max-height: 750px;
+    min-width: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color: var(--background-color);
+}
+
+/* MY CUSTOM STYLES */
+
+.name {
+  font-size: 6.5em;
+  text-transform: uppercase;
+  margin-top: 70px;
+  margin-bottom: -5px;
+  text-shadow: -2px -1px 10px rgb(255, 255, 255);
+  color: black;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  letter-spacing: 3px;
+  color: var(--text-color);
+}
+
+.side-nav {
+  height: 155px;
+  width: 250px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  background-color: var(--background-color);
+}
+
+.personal a {
+  color: var(--text-color);
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  letter-spacing: 2px;
+}
+
+.personal .tiny {
+  margin-right: 5px;
+}
+
+.personal li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-me p {
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  color: var(--text-color);
+}
+
+.chip-set {
+  margin-top: -25px;
+}
+
+/* .btn {
+  background-color: var(--secondary-color);
+} */
+
+.chip {
+  padding: 0 15px;
+  margin: 10px 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.chip:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  ;
+  background-color: var(--secondary-color);
+}
+
+.card .card-title {
+  font-weight: 400;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  margin: -10px 0 0 -3px;
+}
+
+.card .card-content p {
+  color: var(--text-color);
+  font-size: 1.15em;
+  line-height: 1.15em;
+  font-weight: 400;
+  margin-top: -8px;
+}
+
+.card-content li {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: var(--text-color);
+}
+
+.card-action {
+  margin-top: -15px;
+}
+
+.footer-copyright {
+  margin-top: -20px;
+}
+
+img:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.project-picture {
+  opacity: 0;
+}
+
+.project-list li {
+  opacity: 0;
+}
+
+.full-stack li {
+  opacity: 0;
+}
+
+.personal li {
+  opacity: 0;
+}
+
+.resume-links h6 {
+  display: inline-block;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 23px;
+  margin-left: 10px;
+  margin-bottom: 23px;
+  letter-spacing: 2px;
+  color: var(--text-color);
+}
+
+.resume-links a {
+  color: var(--text-color);
+}
+
+.resume-links a:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.resume-links li {
+  opacity: 0;
+}
+
+.resume-info {
+  margin-top: 10px;
+}
+
+.work {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.work h6 {
+  color: var(--primary-color);
+  font-size: 1.25em;
+  letter-spacing: 1.25px;
+  font-weight: 400;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.work p {
+  margin-left: 10px;
+  margin-bottom: -5px;
+  color: var(--text-color);
+}
+
+.freelance {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.subhead {
+  color: var(--secondary-color);
+  float: right;
+  font-size: 0.8em;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid var(--secondary-color);
+}
+
+.footer-copyright a {
+  color: var(--primary-color);
+}
+
+.footer-copyright a:hover {
+  color: var(--secondary-color);
+}
+
+#footer-links {
+  float: right;
+}
+
+#footer-links a {
+  font-weight: 400;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.window-btn {
+  color: black;
+  margin: 12px !important;
+}
+
+.invert {
+  filter: invert(100%);
+}
